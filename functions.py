@@ -1,0 +1,33 @@
+'''
+Functions
+    (1) DEFINE vs CALL
+    (2) Parameter vs Argument
+    (3) Keyword & default arguments
+    (4) Scope
+'''
+
+print("====== DEFINE (parameter) vs CALL (argument)=======")
+# build in function > print() type()
+# Function - resuable block of code!
+# Instead of block {} in JAVA, Python uses indentation!
+
+# DEFINE - build(parameter)
+def greet(a):
+    # pass (hech narsa qilma)
+    print(f"How do you do, {a}")
+
+
+def greeting(b):
+    print("greeting is executed")
+    return f"Hi {b}"
+# f"ss" --> format string
+# CALL - execute(argument)
+# None --> javascriptdagi undefined hisoblanadi
+
+
+result1 = greet("Martin")
+print("result1:", result1)  # --> console da none chiqadi
+# greet("Martin")
+
+result2 = greeting('Justin')
+print("result2:", result2)
