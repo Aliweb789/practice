@@ -41,6 +41,7 @@ vs codeda
 git init
 git status
 git commit -m "Initial status"
+git push -u origin master
 
 git log --oneline
 
