@@ -30,3 +30,16 @@ print("result2:", result2)
 print("======== (4) Error handling system ========")
 
 car_dict = dict(name ="Tayota", year = 2026, electric = True)
+
+try:
+    print("passed here")
+    result = car_dict["origin"]
+    print("result:", result)
+except KeyError as err:
+    print("No origin state property found:", err)
+except AttributeError as err:
+    print("No spped found:", err)
+else: #umuman hato bolmaganda yuradi
+    print("Executed successfully without errors")
+finally: #mantiqda hatolik boladi yoqmi baribir ishga tushadi
+    print("Final closing logic")
