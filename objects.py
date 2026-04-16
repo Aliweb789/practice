@@ -25,3 +25,8 @@ print("result:", result1)
 
 result2 = ceil(98.7)
 print("result2:", result2)
+
+
+print("======== (4) Error handling system ========")
+
+car_dict = dict(name ="Tayota", year = 2026, electric = True)
