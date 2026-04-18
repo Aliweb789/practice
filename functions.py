@@ -12,12 +12,9 @@ print("====== DEFINE (parameter) vs CALL (argument)=======")
 # Instead of block {} in JAVA, Python uses indentation!
 
 # DEFINE - build(parameter)
-
-
 def greet(a):
     # pass (hech narsa qilma)
     print(f"How do you do, {a}")
-
 
 def greeting(b):
     print("greeting is executed")
@@ -26,19 +23,15 @@ def greeting(b):
 # CALL - execute(argument)
 # None --> javascriptdagi undefined hisoblanadi
 
-
 result1 = greet("Martin")
 print("result1:", result1)  # --> console da none chiqadi
 # greet("Martin")
-
 result2 = greeting('Justin')
 print("result2:", result2)
 
 print("====== Keyword & default arguments =======")
 
 # DEFINE
-
-
 def give_greet(name, age = 22):
     print("give_greet is executed")
     return f"Hi {name}, you are {age} years old"

@@ -20,6 +20,7 @@ print(f"the result (1): {result}")
 result = course.title() #capitalize shaklda javob chiqaradi
 print(f"the result (2): {result}")
 
+
 result = course.upper()
 print(f"the result (3): {result}")
 
