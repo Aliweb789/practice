@@ -1,0 +1,48 @@
+
+PYTHON USAGE(BACKEND):(Google, Spotify, Facebookda keng ishlatilib keladi)
+1.web fullstack --> Django&FastAPI
+2.AI Engineering --> ComVision & NLP
+3.Automation/Testing --> Selenium
+4.Desktop/Mobile Apps --> Kivy &BeeWare
+5.Hacking --> CSRF & Injection
+
+resons: 
+1. High-level
+2. Cross-platform
+3. Huge Community
+4. Large Ecosystem
+
+versions:Python2(legacy), Python3(future)
+2 hil yol bilan ornatiladi: python sayti orqali va brew orqali
+
+
+windows --> python --version
+macOs --> python3 --version
+
+python ni yurgizish uchun terminalga python komandasi beriladi
+
+
+compiled languages(C, Java, Golang, RUST):
+  C & Java ----> compiler ----> machine code(101101001010000011)
+interpreted languages(Python, NodeJS, PHP):
+  Python ---> CPython ---> ByteCode --> Machine Code(0101010100001)
+ 
+
+/* git
+brew install git
+git --version
+git config --global user.name "eldorbek"
+git config --global user.email "alijonoveldorbek78@gmail.com"
+
+git config --global --list
+
+
+vs codeda
+git init
+git status
+git commit -m "Initial status"
+git push -u origin master
+
+git log --oneline
+
+*/
