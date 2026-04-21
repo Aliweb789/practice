@@ -9,6 +9,7 @@ print("======= Inheritance ========")
 #parent only public va protected state va methodlarni childga beradi, private state va methodlarni bermaydi
 
 #Parent class
+# class Animal(object) --> objectni doimo yozish shart emas, python 3 da hamma classlar object classidan meros oladi
 class Animal(): #scopeni qoymasa ham hato hisoblamaydi
     description = "This class is parent for animals"
 
@@ -33,6 +34,9 @@ class Dog(Animal): #child class
 
     def protect(self):
         print("Yes, I can protect you")
+    
+    def make_voice(self):
+        print(f"the {self.name} says {self.sound}")
     
 
 class Cat(Animal): #child class
@@ -79,3 +83,24 @@ print(Dog.description)
 print(dog.voice, fish.voice)
 print("dog.status:", dog._status)
 print("cat.status:", cat._status)
+
+
+
+print("======= Polymorphism ========")
+
+dog.make_voice()
+fish.make_voice()
+print("-------")
+#fish > Fish > Animal > object
+
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print(f"The result: {result}")
+
+#Fish > Animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data1, data2)
