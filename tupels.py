@@ -58,6 +58,7 @@ calculate(1, 7, 2, 3)
 print("---------")
 calculate(0, 2, 300)
 calculate(5, 7)
+print("---------")
 
 #**kwargs > dictionary
 def introduce(**kwargs):
@@ -66,3 +67,13 @@ def introduce(**kwargs):
 
 #call
 introduce(name = "Justin",  age = 25)
+introduce(name = "Shawn",  age = 30, single = True)
+print("---------")
+
+
+def greeting(*args, **kwargs): #**kwargs --> keyword arguments
+    print("*args >", args)
+    print("**kwargs >", kwargs)
+
+#call
+greeting("Hi", True, 10, name = "John", age = 22)
