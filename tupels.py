@@ -77,3 +77,13 @@ def greeting(*args, **kwargs): #**kwargs --> keyword arguments
 
 #call
 greeting("Hi", True, 10, name = "John", age = 22)
+
+print("======= zip =========")
+tuple1 = (1, 2, 3, 4)
+tuple2 = ("a", "b", "c")
+
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped) #bu xolda biz zip objectni manzilini koraolamiz holos
+#zip tarkibini korish uchun biz uni listga berishimiz kerak(iterable object hisoblanadi)
+result = list(zipped)
+print(f"the result: {result}")
