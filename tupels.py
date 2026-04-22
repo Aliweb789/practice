@@ -45,7 +45,7 @@ print("z:", z) #list
 
 # *args > tuple
 def calculate(*args):
-    print("*args:", args)
+    print("*args >", args)
     total = 1
     for x in args:
         total *= x
@@ -58,3 +58,11 @@ calculate(1, 7, 2, 3)
 print("---------")
 calculate(0, 2, 300)
 calculate(5, 7)
+
+#**kwargs > dictionary
+def introduce(**kwargs):
+    print(f"the type (**kwargs) value: {type(kwargs)}")
+    print(f"Hi I am {kwargs["name"]} and I am {kwargs["age"]} years old!")
+
+#call
+introduce(name = "Justin",  age = 25)
