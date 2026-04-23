@@ -1,6 +1,7 @@
 '''
-Tupels
-    (1) What is a tupel: tuple vs list
+Tuples
+
+    (1) What is a tuple: tuple vs list
     (2) unpacking arguments
     (3) zip
 '''
@@ -33,7 +34,7 @@ print(animals[0])
 
 # try avoid this
 # people = "Andrew", "John"
-# animals = "dog",
+# animals = ("dog",)
 # x, y, z, a = groups
 
 print("======= unpacking arguments =========")
@@ -63,7 +64,7 @@ print("---------")
 #**kwargs > dictionary
 def introduce(**kwargs):
     print(f"the type (**kwargs) value: {type(kwargs)}")
-    print(f"Hi I am {kwargs["name"]} and I am {kwargs["age"]} years old!")
+    print(f"Hi I am {kwargs['name']} and I am {kwargs['age']} years old!")
 
 #call
 introduce(name = "Justin",  age = 25)
