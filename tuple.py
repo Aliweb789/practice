@@ -12,12 +12,12 @@ print("======= What is a tuple: tuple vs list =========")
 # literal 
 numbs = [3, 5, 1, 2]
 # car_dict = {"brand": "Ferrari", "year": 1995}
-print(numbs)
+# print(numbs)
 
 # constructor 
 letters = list("Hello World!")
 # person_dict = dict(name="Martin", age = 35)
-print(letters)
+# print(letters)
 
 fruits = ["apple", "lemon", "banana", "kiwi"]
 print("before fruits:", fruits)
@@ -25,7 +25,7 @@ print("before fruits:", fruits)
 fruits[2] = "melon"
 print("after fruits:", fruits)
 
-#tuple => listga o'xshash, lekin o'zgarmas (immutable) ma'lumot tuzilmasi. Tuple yaratish uchun oddiygina qavslar () ishlatiladi.
+#we cannnot mutate tuple
 animals = ("dog", "cat", "fish", "lion")
 tuple_obj = ("MIT", 100, True, None)
 
@@ -34,11 +34,11 @@ print(animals[0])
 
 # try avoid this
 # people = "Andrew", "John"
-# animals = ("dog",)
+# animals = "dog",
 # x, y, z, a = groups
 
 print("======= unpacking arguments =========")
-groups = ["MIT", "Mashaqqat", "Flexy", "Devex", "MG"]
+groups = ["MIT", "FLEXY", "DEVEX", "MG"]
 (x, y, *z) = groups #*z qolganelementlarni oziga oladi
 print(f"the x: {x}, the y: {y}")
 print("z:", z) #list
@@ -50,6 +50,7 @@ def calculate(*args):
     total = 1
     for x in args:
         total *= x
+    # print(f"the type (args) value: {type(args)}")
     print(f"the total value: {total}")
     return total
 
@@ -67,7 +68,7 @@ def introduce(**kwargs):
     print(f"Hi I am {kwargs['name']} and I am {kwargs['age']} years old!")
 
 #call
-introduce(name = "Justin",  age = 25)
+introduce(name = "Justin",  age = 28)
 introduce(name = "Shawn",  age = 30, single = True)
 print("---------")
 
