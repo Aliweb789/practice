@@ -46,3 +46,91 @@ git push -u origin master
 git log --oneline
 
 */
+
+text = "hello" --->string
+
+for char in text:
+    print(char)
+---------------------
+car_obj = dict(brand="Ferrari", year=2025)
+my_dict = {"a": 1, "b": 2, "c": 3}
+
+# keys
+for key in my_dict:    --->dict
+    print(key)
+****
+for key in car_obj:
+    print(f"key: {key} => value: {car_obj.get(key)}")
+*****
+# values
+for value in my_dict.values():
+    print(value)
+
+# key-value pairs
+for key, value in my_dict.items():
+    print(key, value)
+----------------------------
+my_list = [10, 20, 30]    ---> list
+
+for item in my_list:
+    print(item)
+-----------------------
+my_tuple = (1, 2, 3)
+
+for item in my_tuple:
+    print(item)
+----------------------
+for i in range(5):
+    print(i)
+for x in range(1, 20, 5): #5-> step
+    print(f"the x: {x}")
+---------------------
+
+for x in range(1, 20, 5): #5-> step
+    print(f"the x: {x}")
+    if x > 10:
+        print("reached break")
+        break #majburiy to'xtatish amali break amali bajarilganda for loop to'xtaydi va else qismi bajarilmaydi lekin undan keyin yozilgan kodlar bajariladi
+else :
+    print("looped successfully")
+-------------------------
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+----------------------------------
+numb = 40
+while numb > 0:
+    numb -= 10 
+    print(f"the numb equals: {numb}")
+------------------------------
+count = 0
+while True: #javascriptdagi dowhile loopga o'xshash
+    count += 1
+    x = int(input("Find number:")) #input() - foydalanuvchidan ma'lumot olish uchun ishlatiladi, int() - stringni butun songa aylantiradi
+    if x == 41:
+        print(f"You found the number in {count} steps")
+        break #breakni ishlatmasak while doimiy aylanadi
+    else:
+        print("Wrong, please find again!")
+-----------------------------
+
+
+
+
+Exercise 1 — Easy
+Print all even numbers from 1 to 20 using a for loop.
+Exercise 4 — Hard
+Build a simple number guessing game using while True:
+
+The secret number is 42
+Keep asking the user to guess
+Print "Too high!" or "Too low!" as hints
+Stop when they guess correctly and show how many attempts it took
+
+
+
+
+
+
+
