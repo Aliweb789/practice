@@ -137,11 +137,17 @@ cars = [
     ("Pagani", 33)
 ]
 new_cars = []
-for car in cars:
-    new_cars.append(car[0])
-print("new_cars1", new_cars)
+# for car in cars:
+#     new_cars.append(car[0])
+# print("new_cars1", new_cars)
 
 result_map = map(lambda car:car[0], cars)
+print(f"the result1: {result_map} and type: {type(result_map)}")
 new_cars = list(result_map)
-# print(f"the result1: {result1} and type: {type(result1)}")
-print("new_cars2:", new_cars)
+print("new_cars:", new_cars)
+
+print("-------")
+#filter
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f"the result_filter: {result_filter} and type: {type(result_filter)}")
+print(list(result_filter))
