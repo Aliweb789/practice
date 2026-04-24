@@ -87,3 +87,61 @@ print("sort reverse:", numbers)
 numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)
 print(f"the sorted numbs: {numbs} and new numbs: {new_numbs}")
+
+print("========= lambda functions =========")
+# lambda is small anonymous function!
+def calculate(x, y): return x * y
+
+result = calculate(3, 5)
+print("result:", result)
+people = [
+    ("Robert", 20),
+    ("Steve", 19),
+    ("Joseph", 25),
+    ("Michael", 30),
+    ("Ali", 40)
+]
+people.sort() #--> sort by alphabetic order
+print("people(1):", people)
+
+people.sort(key=lambda person: person[1]) #sort by age [1] birinchi indexi bboyicha sort qiladi
+print("people(2):", people)
+
+
+
+print("========= ENUMERATE.  MAP and FILTER ===========")
+# enumerate for index & value
+
+animals = ["dog", "cat", "fish"] #list
+for element in enumerate(animals):
+    print("element:", element)
+
+print("----------")
+for (index, value) in enumerate(animals):
+        print(f"the index: {index} and value: {value}")
+
+print("----------")
+# similar in dictionaries
+car_obj = dict(brand="ferrari", year = 2025) #dict
+result = car_obj.items()
+for (key, value) in result:
+    print(f"the key: {key} and value: {value}")
+    
+
+print("----------")
+cars = [
+    ("Ferrari", 78),
+    ("Tayota", 87),
+    ("Audi", 116),
+    ("BWD", 109),
+    ("Pagani", 33)
+]
+new_cars = []
+for car in cars:
+    new_cars.append(car[0])
+print("new_cars1", new_cars)
+
+result_map = map(lambda car:car[0], cars)
+new_cars = list(result_map)
+# print(f"the result1: {result1} and type: {type(result1)}")
+print("new_cars2:", new_cars)
