@@ -1,10 +1,37 @@
+
+/* E-Task:
+    Savol: shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+    Masalan: getReverse("hello") return qilsin "olleh"
+*/
+//masalaning yechimi"
+    const getReverse = function(text) {
+        const result = text.split("").reverse().join("")
+        console.log(result)
+    }
+getReverse("hello")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* D-TASK:
     Savol: shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiniga tegishli birinchi indexni qaytarsin. 
     Masalan: getHighestindex([5, 21, 12, 21, 8]) return qiladi 1 sonini
 */
 
 //masalaning yechimi:
-    const getHighestindex1 = function(arr) {
+/*    const getHighestindex1 = function(arr) {
         let max = arr[0];
         let max_index = 0;
         for (let i = 1; i < arr.length; i++) {
@@ -26,7 +53,7 @@
 
     getHighestindex2([5, 21, 12, 22, 8])
 
-
+*/
 /* C-TASK:
     Savol: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
     Masalan: checkContent("mitgroup", "gmtiprou") return qiladi true;
