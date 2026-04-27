@@ -11,20 +11,6 @@
 getReverse("hello")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* D-TASK:
     Savol: shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiniga tegishli birinchi indexni qaytarsin. 
     Masalan: getHighestindex([5, 21, 12, 21, 8]) return qiladi 1 sonini
