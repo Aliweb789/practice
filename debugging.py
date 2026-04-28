@@ -9,6 +9,7 @@ print("============= Python Packages & Core Package ==========")
 ''' Python packages/modules: Core, File and External'''
 #Core packages > https://docs.python.org/3/library
 
+from PIL import Image
 import turtle
 #Core forward(100) left(100) 
 #t = turtle.Turtle()
@@ -33,3 +34,14 @@ with open("material/message.txt", "r") as your_file:
     print("your content:", your_content)
 print("Done")
 
+print("============= Package Manager & External package ==========")
+'''package manager -->
+    Python > pip pienv
+    NodeJs > npm yarn
+    PHP > composer
+    MacOs > brew
+'''
+# External packages --> https://pypi.org
+
+with Image.open("") as img_obj:
+    pass
