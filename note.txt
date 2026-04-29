@@ -55,6 +55,6 @@ git commit --amend -m "feat:good" --> push qilinmagan commitga overwrite qiladi
 pip list --> pythonda ornatilgan package royhatini chiqaradi
 pip freeze > requirements.txt  --> ornatilgan packagelarni txt formatda yozib chiqarib beradi
 
-
+pip3 show pip ---> package malumotlarini chiqaradi
 
 

@@ -48,3 +48,4 @@ with Image.open("material/googleLogo.png") as img_obj:
     resized_img.show()
     resized_img.save("material/sample.png")
 
+print("============= Debuggingp==========")
