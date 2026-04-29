@@ -43,5 +43,8 @@ print("============= Package Manager & External package ==========")
 '''
 # External packages --> https://pypi.org
 
-with Image.open("") as img_obj:
-    pass
+with Image.open("material/googleLogo.png") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")
+
