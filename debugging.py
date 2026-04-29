@@ -12,12 +12,12 @@ print("============= Python Packages & Core Package ==========")
 from PIL import Image
 import turtle
 #Core forward(100) left(100) 
-#t = turtle.Turtle()
-#t.shape("turtlef")
-#t.speed(1)
-#t.circle(100)
+t = turtle.Turtle()
+t.shape("turtlef")
+t.speed(1)
+t.circle(100)
 
-#turtle.done()
+turtle.done()
 
 print("=======")
 #doimo fayllar ochilgandan keyin yopilishi kerak
@@ -48,4 +48,15 @@ with Image.open("material/googleLogo.png") as img_obj:
     resized_img.show()
     resized_img.save("material/sample.png")
 
-print("============= Debuggingp==========")
+print("============= Debugging==========")
+
+def get_summary(*args): # DEFINE
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount #find the bug via debugging
+
+# CALL
+test = 100
+result = get_summary(1, 2, 3, 4, 5)
+print("result:", result)
