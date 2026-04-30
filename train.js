@@ -1,20 +1,22 @@
+
+
 /* F-TASK
     Savol: findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarshi kerak.
     Masalan: findDoublers("hello") return true return qiladi
     masalaning yexhimi:
 */
-    const findDoublers = function(str) {
-        let count = 0
-        for (let i = 0; i < str.length; i++) {
-        for (let j = i + 1; j < str.length; j++) {
-            if (str[i] === str[j]) {
-                count++
-            } 
-        }
-    }
-    count > 0? console.log("the result is:", true): console.log("the result is:", false)
-    } 
-    findDoublers("helo")
+    // const findDoublers = function(str) {
+    //     let count = 0
+    //     for (let i = 0; i < str.length; i++) {
+    //     for (let j = i + 1; j < str.length; j++) {
+    //         if (str[i] === str[j]) {
+    //             count++
+    //         } 
+    //     }
+    // }
+    // count > 0? console.log("the result is:", true): console.log("the result is:", false)
+    // } 
+    // findDoublers("helo")
 
 
 

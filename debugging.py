@@ -13,7 +13,7 @@ from PIL import Image
 import turtle
 #Core forward(100) left(100) 
 t = turtle.Turtle()
-t.shape("turtlef")
+t.shape("turtle")
 t.speed(1)
 t.circle(100)
 
