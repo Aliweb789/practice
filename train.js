@@ -1,5 +1,20 @@
+/* H-TASK
+    Savol: shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
+    Masalan: getPositive([1, -4, 2]) return qiladi "12"
+*/
 
+const getPositive = (arr)=> {
+    let text = ""
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            text += arr[i]
+        }
+    }
+    if(text == "") text = "No positive number here"
+    console.log(text)
+}
 
+getPositive([-1, -4, 2, 5, 'hello'])
 /* F-TASK
     Savol: findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarshi kerak.
     Masalan: findDoublers("hello") return true return qiladi
