@@ -1,26 +1,51 @@
+/* L-TASK
+    Sunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlarni ketma-ketligini buzmasdan stringni qaytarsin.
+    MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc"
+*/
+const reverseSentence = (str) => {
+    const arr = str.split(" ")
+    console.log(arr);
+    
+    const new_arr = arr.map(value => {
+       return value.split('').reverse().join('')
+    })
+    console.log(new_arr.join(" "));
+    
+}
+reverseSentence("we like coding!")
+
+
+
+
+
+
+
+
+
+
 /*J-TASK
     Shunday function yozing, u paramentridagi array ichida eng kop takrorlangan raqamni topin qaytarsin. 
     MASALAN: majorityElement([1, 2, 3, 4, 5, 6, 4, 3, 4]) return 4
 */
-    function majorityElement(arr) {
-    const counts = {};
+//     function majorityElement(arr) {
+//     const counts = {};
     
-    for (let num of arr) {
-        counts[num] = (counts[num] || 0) + 1;
-    }
+//     for (let num of arr) {
+//         counts[num] = (counts[num] || 0) + 1;
+//     }
     
-    let maxCount = 0, result = null;
+//     let maxCount = 0, result = null;
     
-    for (let [num, count] of Object.entries(counts)) {
-        if (count > maxCount) {
-            maxCount = count;
-            result = Number(num);
-        }
-    }
+//     for (let [num, count] of Object.entries(counts)) {
+//         if (count > maxCount) {
+//             maxCount = count;
+//             result = Number(num);
+//         }
+//     }
     
-    console.log(result)
-}
-majorityElement([1, 2, 3, 4, 5, 6, 4, 3, 4]);
+//     console.log(result)
+// }
+// majorityElement([1, 2, 3, 4, 5, 6, 4, 3, 4]);
 /* H-TASK
     Savol: shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
     Masalan: getPositive([1, -4, 2]) return qiladi "12"
