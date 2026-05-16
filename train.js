@@ -1,18 +1,33 @@
+/* N-TASK
+Shunday function tozing, u raqamlardan tashkil topgan array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamnikvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin
+MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 2, square: 9}] */
+
+function getSquareNumbers(arr) {
+    const result = arr.map((value) => ({
+        number: value,
+        square: value**2
+    }))
+    console.log(result)
+}
+getSquareNumbers([1, 2, 3])
+
+
+
 /* L-TASK
     Sunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlarni ketma-ketligini buzmasdan stringni qaytarsin.
     MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc"
 */
-const reverseSentence = (str) => {
-    const arr = str.split(" ")
-    console.log(arr);
+// const reverseSentence = (str) => {
+//     const arr = str.split(" ")
+//     console.log(arr);
     
-    const new_arr = arr.map(value => {
-       return value.split('').reverse().join('')
-    })
-    console.log(new_arr.join(" "));
+//     const new_arr = arr.map(value => {
+//        return value.split('').reverse().join('')
+//     })
+//     console.log(new_arr.join(" "));
     
-}
-reverseSentence("we like coding!")
+// }
+// reverseSentence("we like coding!")
 
 
 
