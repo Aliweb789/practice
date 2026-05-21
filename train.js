@@ -1,17 +1,29 @@
+/*P-TASK
+Shunday function yozing, u object qabul qilsin va arrayni object arrayga otkazib arrayni qaytarsin 
+MASALAN: objectToArray({a:10, b: 20}) return [['a', 10], ['b', 20]] */
+
+const objectToArray = (obj) => {
+  const result = [];
+  // const result = Object.entries(obj)
+  for (const key in obj) {
+    result.push([key, obj[key]]);
+  }
+  console.log(result);
+};
+objectToArray({ a: 10, b: 20 });
+
 /* N-TASK
 Shunday function tozing, u raqamlardan tashkil topgan array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamnikvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin
 MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 2, square: 9}] */
 
-function getSquareNumbers(arr) {
-    const result = arr.map((value) => ({
-        number: value,
-        square: value**2
-    }))
-    console.log(result)
-}
-getSquareNumbers([1, 2, 3])
-
-
+// function getSquareNumbers(arr) {
+//     const result = arr.map((value) => ({
+//         number: value,
+//         square: value**2
+//     }))
+//     console.log(result)
+// }
+// getSquareNumbers([1, 2, 3])
 
 /* L-TASK
     Sunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlarni ketma-ketligini buzmasdan stringni qaytarsin.
@@ -20,23 +32,14 @@ getSquareNumbers([1, 2, 3])
 // const reverseSentence = (str) => {
 //     const arr = str.split(" ")
 //     console.log(arr);
-    
+
 //     const new_arr = arr.map(value => {
 //        return value.split('').reverse().join('')
 //     })
 //     console.log(new_arr.join(" "));
-    
+
 // }
 // reverseSentence("we like coding!")
-
-
-
-
-
-
-
-
-
 
 /*J-TASK
     Shunday function yozing, u paramentridagi array ichida eng kop takrorlangan raqamni topin qaytarsin. 
@@ -44,20 +47,20 @@ getSquareNumbers([1, 2, 3])
 */
 //     function majorityElement(arr) {
 //     const counts = {};
-    
+
 //     for (let num of arr) {
 //         counts[num] = (counts[num] || 0) + 1;
 //     }
-    
+
 //     let maxCount = 0, result = null;
-    
+
 //     for (let [num, count] of Object.entries(counts)) {
 //         if (count > maxCount) {
 //             maxCount = count;
 //             result = Number(num);
 //         }
 //     }
-    
+
 //     console.log(result)
 // }
 // majorityElement([1, 2, 3, 4, 5, 6, 4, 3, 4]);
@@ -83,25 +86,18 @@ getSquareNumbers([1, 2, 3])
     Masalan: findDoublers("hello") return true return qiladi
     masalaning yexhimi:
 */
-    // const findDoublers = function(str) {
-    //     let count = 0
-    //     for (let i = 0; i < str.length; i++) {
-    //     for (let j = i + 1; j < str.length; j++) {
-    //         if (str[i] === str[j]) {
-    //             count++
-    //         } 
-    //     }
-    // }
-    // count > 0? console.log("the result is:", true): console.log("the result is:", false)
-    // } 
-    // findDoublers("helo")
-
-
-
-
-
-
-
+// const findDoublers = function(str) {
+//     let count = 0
+//     for (let i = 0; i < str.length; i++) {
+//     for (let j = i + 1; j < str.length; j++) {
+//         if (str[i] === str[j]) {
+//             count++
+//         }
+//     }
+// }
+// count > 0? console.log("the result is:", true): console.log("the result is:", false)
+// }
+// findDoublers("helo")
 
 /* E-Task:
     Savol: shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
@@ -113,7 +109,6 @@ getSquareNumbers([1, 2, 3])
 //         console.log(result)
 //     }
 // getReverse("hello")
-
 
 /* D-TASK:
     Savol: shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiniga tegishli birinchi indexni qaytarsin. 
@@ -179,9 +174,6 @@ MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 
 // countDigits("ad2a54y79we87t450sfgb9")
 
-
-
-
 /* A-TASK:
     Savol: Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
 MASALAN countLetter("e", "engineer") 3ni return qiladi.
@@ -203,4 +195,3 @@ const countLetter = function(a, b) {
 countLetter("e", "engineer") //==>solution: 3
 
 */
-
